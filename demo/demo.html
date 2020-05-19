@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+<!-- 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="swiper-5.3.1/package/css/swiper.min.css"/>
+	<script type="text/javascript" src="dist/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="swiper-5.3.1/package/js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullpage.min.css"/>
+	<script type="text/javascript" src="fullpage/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="fullpage/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="fullpage/jquery.easings.min.js"></script> -->
+	<style type="text/css">
+		table{
+			border: 1px solid #000000;
+			border-collapse: collapse;
+			margin: 0 auto;
+			width: 1200px;
+		}
+		td,th{
+			border: 1px solid #000000;
+			text-align: center;
+		}
+		td>img{
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<table id="teacher">
+	</table>
+</body>
+<script> 
+	xhr=new XMLHttpRequest();
+	xhr.open("post","http://www.qhdlink-student.top/student/coach.php");
+	xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState=="4" && xhr.status=="200"){
+			var data=xhr.responseText;
+			var jsondata=JSON.parse(data);
+			console.log(jsondata);
+			for(var i in jsondata){
+				var tr=document.createElement("tr");
+				for(var j in jsondata[i]){
+					var inform=jsondata[i][j];
+					if(jsondata[i].id_coach%2==1){
+						var td=document.createElement("td");
+						if(j=="path_coach"){
+						td.innerHTML="<img src='http://www.qhdlink-student.top/"+inform+"'>"
+						}else{
+							td.innerHTML=inform;
+						}
+						tr.appendChild(td);
+					}
+				}
+				document.getElementById("teacher").appendChild(tr);
+			}
+		}
+	}
+	xhr.send("username=zyp&userpwd=123456&userclass=56&type=4");
+</script>
+</html>

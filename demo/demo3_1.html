@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	var t=7*24*60*60*1000;
+	document.cookie="name=lily&age=18&sex=女&pwd=345;expires="+t;
+	var str=document.cookie;
+	var name_s=[]
+	var value_s=[]
+	var stt2=str.split("&")
+	for(var i=0;i<stt2.length;i++){
+		var x=stt2[i].split("=");
+		name_s.push(x[0]);
+		value_s.push(x[1]);
+	}
+	console.log(name_s,value_s)
+</script>
+</html>
