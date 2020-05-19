@@ -1,0 +1,433 @@
+body {
+    font-size: 16px;
+    position: relative;
+}
+
+/* 导航条 */
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    overflow: hidden;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 13.5px 15px;
+}
+
+.navbar-brand>img {
+    width: 108px;
+}
+
+.nav-span {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #262626;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>li>.nav-a {
+    font-weight: 600;
+}
+
+.nav-img img {
+    position: relative;
+    top: 2px;
+    left: 3px;
+    width: 13px;
+}
+
+.nav-img2 img {
+    position: relative;
+    top: 5px;
+    left: 3px;
+    width: 24px;
+}
+
+.nav-img3 img {
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+
+.nav>.nav-img2>a {
+    padding: 6px 15px;
+}
+
+.nav>.nav-img3>a {
+    padding: 0px 15px;
+    line-height: 36px;
+}
+.male{
+	border: 1px solid #000;
+	border-radius: 2px;
+}
+/* 导航结束 */
+
+/* footer */
+.footer {
+    padding: .4rem 5% .2rem;
+    background: #f2f2f2;
+}
+
+.footer-con {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-ul {
+    flex: auto;
+    margin-top: .18rem;
+}
+
+.footer-ul h3 {
+    font-size: 20px;
+    color: #616161;
+    font-weight: 600;
+}
+
+.footer-ul a {
+    font-size: 12px;
+    color: #616161;
+    display: block;
+    margin-top: .15rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.footer-bottom div {
+    margin-top: .4rem;
+}
+
+.foot-btm-l img {
+    position: relative;
+    top: 5px;
+    right: 3px;
+}
+
+.foot-btm-l a {
+    color: #616161;
+}
+
+.foot-btm-r {
+    line-height: 31px;
+}
+
+.foot-btm-r a {
+    color: #616161;
+    display: inline-block;
+    margin-right: .15rem;
+}
+
+/* footer结束 */
+/* 媒介查询 */
+@media (max-width: 1200px) {
+    .footer-ul {
+        width: 33.33333%
+    }
+	.pc{
+		display: none;
+	}
+	.con-02>.btn{
+		display: flex;
+	}
+	.right{
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding: 20px 10px;
+	}
+	.left-img{
+		margin-top: 50px;
+		width: 100% !important;
+	}
+	.left-img>img{
+		width: 100%;
+	}
+}
+
+@media (max-width:767px) {
+    .footer-ul {
+        width: 100%
+    }
+	.con-02>.btn{
+		flex-wrap: wrap;
+		display: flex;
+	}
+}
+
+
+@media screen and (min-width:320px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:360px) {
+    html {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    html {
+        font-size: 37.5px;
+    }
+}
+
+@media screen and (min-width:411px) {
+    html {
+        font-size: 41.1px;
+    }
+}
+
+@media screen and (min-width:414px) {
+    html {
+        font-size: 41.4px;
+    }
+}
+
+@media screen and (min-width:480px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width:540px) {
+    html {
+        font-size: 54px;
+    }
+}
+
+@media screen and (min-width:640px) {
+    html {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 72px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 76.8px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    html {
+        font-size: 102.4px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 120px;
+    }
+	.mob{
+		display: none;
+	}
+    .container {
+        width: 1367px;
+    }
+	.right{
+		position: absolute;
+		left: 60%;
+		top: 33%;
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.martop{
+		margin-bottom: 80px;
+	}
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.tip{
+	width: 100%;
+	background-color: #003863;
+    color: #6dcff6;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;;
+}
+.img{
+	width: 100%;
+}
+.pc{
+	position: relative;
+}
+.con-01{
+	position: absolute;
+	left: 1.083rem;
+	top: 33%;
+	z-index: 9;
+}
+.ch1{
+	font-size: 46px;
+	line-height: 56px;
+	color: #fff;
+	font-weight: bold;
+}
+.ch2{
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 0px;
+}
+.btn{
+	margin-top: 20px;
+	padding: 0;
+	
+}
+.abtn{
+	color: rgb(255, 255, 255) !important;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	background: rgb(216, 59, 1) !important;
+	width: 226px;
+	height: 39px;
+	display: block;
+	line-height: 38px;
+	float: left;
+	margin-right: 30px;
+	margin-top: 15px;
+	transition: all 1s;
+}
+.abtn:hover{
+	text-decoration: none;
+	background: #a50800 !important;
+}
+.color{
+	color: black!important;
+	text-align: center;
+}
+.con-02{
+	padding: 40px;
+}
+.con-02>.btn{
+	justify-content: center;
+	align-items: center;
+}
+#con03{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-top: 80px;
+	background-color: #f5f5f5;
+}
+.left-img>img{
+	width: 100%;
+}
+.left-img{
+	float: left;
+	width: 60%;
+}
+.ch01{
+	font-size: 46px;
+	line-height: 56px;
+	font-weight: 600;
+}
+.p1{
+	width: 80%;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	padding-top: 10px;
+}
+.ch02{
+	font-size: 34px;
+	line-height: 56px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 150px;
+}
+.concc{
+	border-bottom: 1px solid #000;
+}
+.martop{
+	margin-top: 20px;
+}
+.img-icon{
+	margin-bottom: 20px;
+	position: relative;
+	height: 40px;
+}
+.img-icon>img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	max-width: 40px;
+	max-height: 40px;
+}
+.ch4{
+	padding-bottom: 5px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+.liaojie{
+	display: flex;
+	justify-content: center;
+}
+.h4a{
+	padding-top: 15px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.h4a:hover{
+	text-decoration: none;
+	border-bottom: 2px solid #0067b8;
+	transition: all 0.5s;
+}
+.follow{
+	width: 100%;
+}
+.con-text{
+	padding: 60px 1rem;
+}
+.con-text>p{
+	margin-bottom: 4px;
+	color: #000;
+	font-size: 20px;
+	padding-right: 20px;
+	font-weight: 600;
+	float: left;
+}
+.con-text>img{
+	float: left;
+	padding-right: 20px;
+}
